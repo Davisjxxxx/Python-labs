@@ -1,0 +1,95 @@
+		# employee name
+		name = str(input('Enter your name:'))
+		 
+		# Response and welcome to the pay calculator
+		if name:
+		    print(f"Hello, {name}! Welcome to your pay calculator!")
+		else:
+		    print('Please enter your name to move forward.')
+		    
+		    #Create a "while loop" if I want to keep this
+		    name = str(input('Please enter your name:'))    
+		  
+		   ##what to I need to do to stop this loop if they do not enter a name?
+		   
+		   
+		# pay and hours
+		 
+		hours = float(input('Please enter your hours worked:'))
+		rate = float(input('Enter your hours rate of pay:'))
+		 
+		if  hours <= 40:
+		    Gross_Wages = hours*rate
+		     ## I am not getting a total gross figure right now, only an OT figure based on the print function below
+		 
+		elif hours > 40: 
+		    Gross_Wages = (40 * rate) + (hours - 40) * (1.5 * rate) 
+		    print(f" Weekly Gross Wages = {Gross_Wages}, Anticipated annual Gross Wages = {Gross_Wages * 52}")
+		    print(f" Overtime earned this period: = {(hours - 40) * (rate * 1.5)}") 
+		
+		
+		#401k contribution calculations
+		
+		
+		#Retirement_Contribution = float(input('Please enter a retirement contribution percent to see how you can reduce your taxable income and invest money that otherwise would have been paid to the IRS:'))
+		
+		#if Retirement_Contribution = float(input(''))
+		
+		#elif Retirement_Contribution = 
+		 
+		   
+		   
+		#basic=float(input("Gross_Wages:"))   
+		 
+		 
+		    # tax 
+		Fed_Tax = Gross_Wages*0.10
+		State_Tax=Gross_Wages*0.03
+		Fica_Tax=Gross_Wages*0.07
+		Total_Tax_Per_Dollar = Fed_Tax+State_Tax+Fica_Tax
+		print(f" This is your total tax after deductions: {Total_Tax_Per_Dollar}")
+		print(f" Your net income is: = {Gross_Wages - Total_Tax_Per_Dollar}")
+		    
+		    
+		#Net_Income = ("Gross_Wages - Fed_Tax - State_Tax - Fica_Tax") 
+		#print(f"After Tax Income is:", Net_Income)
+		 
+		
+		  ############ This is not recognizing the percentages. Its reducing by pennies. How do I convert? ***I got a new code entered for percentages, but cannot figure out how to implement it into the calculation
+		
+		  #Tax Brackets
+		  ###Need if and then statements flowing here
+		  
+		 #401k_contribution_impacts
+		
+		#if Gross_Wages <= $11,000.00:
+		    #Taxable_Rate1 = 10%
+		#10% – $0 to $11,000.
+		#elif Gross_Wages >= $11,000 and <= $44,725:
+		    #Taxable_Rate2 = "12%
+		#12% – $11,000 to $44,725.
+		#elif Gross_Wages >= $44,725 and <= $95,375:
+		    #Taxable_Rate3 = 22%
+		#22% – $44,725 to $95,375.
+		#elif Gross_Wages >= $95,375 and <= $182,100:
+		    #Taxable_Rate4 = 24%
+		#24% – $95,375 to $182,100.
+		#elif Gross_Wages >= $182,100 and <= $231,250:
+		    #Taxable_Rate5 = 32%
+		#32% – $182,100 to $231,250.
+		#elif Gross_Wages >= $231,250 and <= $578,125:
+		    #Taxable_Rate6 = 12%
+		#35% – $231,250 to $578,125.
+		#elif Gross_Wages > $578,125:
+		    #Taxable_Rate7 = 12%
+		#37% – $578,125 or more
+		
+		See bottom for details on how to write the tax code..
+		 
+		  # tax 
+		Fed_Tax = Gross_Wages*0.10
+		State_Tax=Gross_Wages*0.03
+		Fica_Tax=Gross_Wages*0.07
+		Total_Tax_Per_Dollar = Fed_Tax+State_Tax+Fica_Tax
+		print(f" This is your total tax after deductions: {Total_Tax_Per_Dollar}")
+		print(f" Your net income is: = {Gross_Wages - Total_Tax_Per_Dollar}")
